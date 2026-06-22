@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rupanshu Tandon — Director of Software Engineering</title>
+<meta name="description" content="Rupanshu Tandon — Director of Software Engineering. 19+ years building and scaling global engineering organizations at the intersection of AI, cloud platforms, and commercial outcomes." />
+<meta property="og:title" content="Rupanshu Tandon — Director of Software Engineering" />
+<meta property="og:description" content="Senior engineering leader. AI-powered platforms, cloud-native systems, and measurable commercial outcomes." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Archivo+Expanded:wght@600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#E9E7DF;
+    --paper-2:#E1DFD5;
+    --ink:#1C1F1A;
+    --ink-soft:#4A4E45;
+    --field:#143A32;
+    --field-ink:#E9E7DF;
+    --brass:#A8823C;
+    --brass-deep:#8C6A2C;
+    --rule:#C5C2B6;
+    --rule-dark:#2C4E46;
+    --maxw:1180px;
+    --display:"Archivo Expanded","Archivo",system-ui,sans-serif;
+    --display-tight:"Archivo",system-ui,sans-serif;
+    --serif:"Newsreader",Georgia,serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--serif);
+    font-size:18px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  ::selection{background:var(--brass);color:var(--paper)}
+
+  a{color:inherit;text-decoration:none}
+  :focus-visible{outline:2.5px solid var(--brass);outline-offset:3px;border-radius:2px}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+  .mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:500}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(233,231,223,.78);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s ease, background .3s ease;
+  }
+  header.nav.scrolled{border-bottom-color:var(--rule)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--mono);font-weight:600;letter-spacing:.06em;font-size:.82rem}
+  .brand b{color:var(--brass-deep)}
+  .nav-links{display:flex;gap:30px}
+  .nav-links a{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);transition:color .2s}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+  @media(max-width:760px){
+    .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--rule)}
+    .nav-links.open{display:flex}
+    .nav-links a{padding:16px 28px;border-top:1px solid var(--rule)}
+    .nav-toggle{display:block}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{padding:150px 0 70px;position:relative}
+  .hero .eyebrow{color:var(--brass-deep);margin-bottom:26px}
+  .hero h1{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:clamp(2.6rem,7.4vw,6.1rem);
+    line-height:.96;
+    letter-spacing:-.01em;
+    margin-bottom:8px;
+  }
+  .hero .role{
+    font-family:var(--display-tight);
+    font-weight:600;
+    font-size:clamp(1.05rem,2.4vw,1.5rem);
+    letter-spacing:.01em;
+    color:var(--ink-soft);
+    margin-bottom:34px;
+  }
+  .hero .thesis{
+    font-family:var(--serif);
+    font-size:clamp(1.15rem,2.1vw,1.45rem);
+    line-height:1.5;
+    max-width:42ch;
+    margin-bottom:44px;
+  }
+  .hero .thesis em{font-style:italic;color:var(--brass-deep)}
+
+  /* hero divider */
+  .hero-rule{height:1px;background:var(--rule);margin:0 0 30px}
+
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 34px;color:var(--ink-soft)}
+  .hero-meta a{display:inline-flex;align-items:center;gap:8px;transition:color .2s}
+  .hero-meta a:hover{color:var(--brass-deep)}
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{padding:74px 0;border-top:1px solid var(--rule)}
+  .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:46px}
+  .sec-head .idx{color:var(--brass-deep)}
+  .sec-head h2{
+    font-family:var(--display-tight);
+    font-weight:700;
+    font-size:clamp(1.5rem,3.6vw,2.4rem);
+    letter-spacing:-.01em;
+  }
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  /* ---------- PROFILE ---------- */
+  .profile-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:start}
+  .profile-grid p{font-size:1.22rem;line-height:1.66;margin-bottom:20px}
+  .profile-grid p:last-child{margin-bottom:0}
+  .profile-aside{font-family:var(--mono);font-size:.8rem;line-height:2;text-transform:none;letter-spacing:.02em;color:var(--ink-soft);border-left:2px solid var(--brass);padding-left:22px}
+  .profile-aside b{color:var(--ink);display:block;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.72rem;margin-bottom:10px}
+  @media(max-width:760px){.profile-grid{grid-template-columns:1fr;gap:34px}}
+
+  /* ---------- METRICS LEDGER ---------- */
+  .ledger{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-left:1px solid var(--ink)}
+  .ledger .cell{border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:30px 26px;background:transparent;transition:background .25s}
+  .ledger .cell:hover{background:var(--paper-2)}
+  .ledger .fig{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1;letter-spacing:-.02em;display:flex;align-items:baseline;gap:4px}
+  .ledger .fig .u{font-size:.42em;color:var(--brass-deep);font-weight:700}
+  .ledger .lbl{margin-top:14px;color:var(--ink-soft);font-size:.95rem;line-height:1.45}
+  @media(max-width:760px){.ledger{grid-template-columns:1fr 1fr}}
+  @media(max-width:460px){.ledger{grid-template-columns:1fr}}
+
+  /* ---------- EXPERIENCE TIMELINE ---------- */
+  .role-row{display:grid;grid-template-columns:64px 1fr;gap:0;border-top:1px solid var(--rule)}
+  .role-row:first-of-type{border-top:1px solid var(--ink)}
+  .role-row:last-of-type{border-bottom:1px solid var(--ink)}
+  .role-num{font-family:var(--mono);font-size:.8rem;color:var(--brass-deep);padding:30px 0;font-weight:600}
+  .role-body{padding:30px 0 34px}
+  .role-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;align-items:baseline;margin-bottom:6px}
+  .role-title{font-family:var(--display-tight);font-weight:700;font-size:1.35rem;letter-spacing:-.01em}
+  .role-meta{font-family:var(--mono);font-size:.74rem;color:var(--ink-soft);letter-spacing:.05em}
+  .role-org{color:var(--brass-deep);font-family:var(--mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:16px;display:block}
+  .role-body ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .role-body li{position:relative;padding-left:22px;font-size:1.05rem;line-height:1.55;color:var(--ink)}
+  .role-body li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border:1.5px solid var(--brass);border-radius:50%}
+  @media(max-width:560px){.role-row{grid-template-columns:1fr}.role-num{padding:24px 0 0}.role-body{padding-top:14px}}
+
+  /* ---------- WORK / FIELD BLOCK ---------- */
+  .field{background:var(--field);color:var(--field-ink);border-top:none}
+  .field ::selection{background:var(--brass);color:var(--field)}
+  .field .sec-head h2,.field .role-title{color:var(--field-ink)}
+  .field .sec-head .idx,.field .eyebrow{color:var(--brass)}
+  .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule-dark);border:1px solid var(--rule-dark)}
+  .work-card{background:var(--field);padding:36px 32px;transition:background .3s}
+  .work-card:hover{background:#10322B}
+  .work-tag{color:var(--brass);margin-bottom:18px}
+  .work-card h3{font-family:var(--display-tight);font-weight:700;font-size:1.45rem;margin-bottom:14px;letter-spacing:-.01em}
+  .work-card p{font-size:1.05rem;line-height:1.6;color:#CFD4CC;margin-bottom:20px}
+  .work-stack{display:flex;flex-wrap:wrap;gap:8px}
+  .work-stack span{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--rule-dark);color:#AEB8AE;padding:5px 10px;border-radius:999px}
+  .work-stat{font-family:var(--mono);font-size:.82rem;color:var(--brass);margin-bottom:20px;letter-spacing:.04em}
+  @media(max-width:760px){.work-grid{grid-template-columns:1fr}}
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:42px}
+  .skill-col h4{font-family:var(--mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:var(--brass-deep);margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--rule)}
+  .skill-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .skill-col li{font-size:1.02rem;color:var(--ink)}
+  .skill-col li span{color:var(--ink-soft)}
+  @media(max-width:760px){.skills-grid{grid-template-columns:1fr;gap:32px}}
+
+  /* ---------- TWO COLUMN (edu / awards) ---------- */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+  @media(max-width:760px){.two-col{grid-template-columns:1fr;gap:48px}}
+  .stack-item{padding:18px 0;border-top:1px solid var(--rule)}
+  .stack-item:first-child{border-top:1px solid var(--ink)}
+  .stack-item:last-child{border-bottom:1px solid var(--ink)}
+  .stack-item .t{font-family:var(--display-tight);font-weight:600;font-size:1.12rem;letter-spacing:-.01em}
+  .stack-item .s{color:var(--ink-soft);font-size:.98rem;margin-top:3px}
+  .stack-item .when{font-family:var(--mono);font-size:.72rem;color:var(--brass-deep);letter-spacing:.05em;margin-top:6px;display:block}
+  .award .t{display:flex;gap:12px;align-items:flex-start}
+  .award .t::before{content:"";flex:none;margin-top:.45em;width:9px;height:9px;background:var(--brass);transform:rotate(45deg)}
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+  .chips span{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--rule);padding:6px 12px;border-radius:999px;color:var(--ink-soft)}
+
+  /* ---------- FOOTER / CONTACT ---------- */
+  footer{background:var(--ink);color:var(--paper);padding:84px 0 48px;border-top:none}
+  footer ::selection{background:var(--brass);color:var(--ink)}
+  .foot-eyebrow{color:var(--brass);margin-bottom:24px}
+  footer h2{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,4rem);line-height:1;letter-spacing:-.01em;margin-bottom:40px}
+  .foot-links{display:flex;flex-wrap:wrap;gap:14px 16px;margin-bottom:60px}
+  .foot-links a{font-family:var(--mono);font-size:.82rem;letter-spacing:.04em;border:1px solid #3A3D36;padding:13px 20px;border-radius:999px;transition:all .25s}
+  .foot-links a:hover{background:var(--brass);border-color:var(--brass);color:var(--ink)}
+  .languages{display:flex;flex-wrap:wrap;gap:8px 28px;padding-top:30px;border-top:1px solid #3A3D36;margin-bottom:30px}
+  .languages span{font-family:var(--mono);font-size:.78rem;letter-spacing:.04em;color:#A7A99F}
+  .languages span b{color:var(--paper);font-weight:500}
+  .colophon{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:#6E7067;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">RUPANSHU <b>TANDON</b></a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#profile">Profile</a>
+      <a href="#impact">Impact</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navtoggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:none">
+    <div class="wrap">
+      <div class="mono eyebrow">Bangalore, India · Engineering Leadership</div>
+      <h1>Rupanshu<br>Tandon</h1>
+      <div class="role">Director of Software Engineering</div>
+      <p class="thesis">Nineteen years turning ambiguous business problems into <em>durable technical strategy</em> — and platform investments into measurable revenue.</p>
+
+      <div class="hero-rule" aria-hidden="true"></div>
+
+      <div class="hero-meta mono">
+        <a href="mailto:rupanshu2129@gmail.com">✉ rupanshu2129@gmail.com</a>
+        <a href="tel:+919902586103">☎ +91 99025 86103</a>
+        <a href="https://linkedin.com/in/rupanshu-tandon" target="_blank" rel="noopener">↗ linkedin.com/in/rupanshu-tandon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono idx">01</span><h2>Profile</h2></div>
+      <div class="profile-grid reveal">
+        <div>
+          <p>I build and scale global engineering organizations at the intersection of AI, cloud platforms, and commercial outcomes — shipping production AI systems and translating fuzzy business goals into architecture teams can run with.</p>
+          <p>My work spans heavily regulated, high-complexity environments: automotive R&D at Mercedes-Benz and agri-commodities at Cargill. The throughline is consistent — converting platform investment into revenue and operational efficiency that the business can actually measure.</p>
+        </div>
+        <div class="profile-aside">
+          <b>At a glance</b>
+          19+ years in software<br>
+          40+ engineers led, incl. EMs<br>
+          18+ business units served<br>
+          DBA candidate — AI in Enterprise Systems<br>
+          Executive MBA, IIM Calcutta
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT LEDGER -->
+  <section id="impact">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono idx">02</span><h2>Impact, in figures</h2></div>
+      <div class="ledger reveal">
+        <div class="cell"><div class="fig">19<span class="u">+ yrs</span></div><div class="lbl">Leading software delivery across automotive and agri-commodities.</div></div>
+        <div class="cell"><div class="fig">$2<span class="u">M / yr</span></div><div class="lbl">Annual revenue impact from the AI-powered Strategic Pricing Platform.</div></div>
+        <div class="cell"><div class="fig">18<span class="u">+ BUs</span></div><div class="lbl">Business units and geographies adopting platforms I led.</div></div>
+        <div class="cell"><div class="fig">40<span class="u">+ eng</span></div><div class="lbl">Engineers managed and mentored, including leads and managers.</div></div>
+        <div class="cell"><div class="fig">~40<span class="u">%</span></div><div class="lbl">Manual effort reduced via enterprise generative-AI tooling.</div></div>
+        <div class="cell"><div class="fig">11<span class="u">%</span></div><div class="lbl">Of Cargill annual revenue flows through the SaltStore channel.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono idx">03</span><h2>Experience</h2></div>
+
+      <div class="reveal">
+        <div class="role-row">
+          <div class="role-num">01</div>
+          <div class="role-body">
+            <div class="role-head"><div class="role-title">Director, Software Engineering</div><div class="role-meta">2024 — Present</div></div>
+            <span class="role-org">Cargill Business Services · Bangalore</span>
+            <ul>
+              <li>Lead engineering across two strategic product lines — an AI-powered pricing platform and a B2B digital commerce platform — supporting 18+ business units globally.</li>
+              <li>Own org strategy, hiring, and delivery execution for a multi-team engineering function operating across geographies.</li>
+              <li>Partner with commercial and data-science stakeholders to align model design with pricing strategy and accelerate time-to-insight for analysts.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role-row">
+          <div class="role-num">02</div>
+          <div class="role-body">
+            <div class="role-head"><div class="role-title">Associate Director, Software Engineering</div><div class="role-meta">2020 — 2024</div></div>
+            <span class="role-org">Cargill Business Services · Bangalore</span>
+            <ul>
+              <li>Took the charter to unify Cargill's fragmented digital presence into a shared enterprise Digital Experience Platform, scaling it from a single-business pilot to multiple BUs on AWS.</li>
+              <li>Directed modernization with microservices, API-first design, and cloud-native frontends — improving scalability, resilience, and deployment frequency.</li>
+              <li>Launched generative-AI tools for knowledge retrieval and workflow automation, cutting manual effort by ~40% across engineering and support.</li>
+              <li>Managed and developed 40+ engineers, building a leadership pipeline able to operate autonomously across distributed teams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role-row">
+          <div class="role-num">03</div>
+          <div class="role-body">
+            <div class="role-head"><div class="role-title">Consulting Engineer</div><div class="role-meta">2019 — 2020</div></div>
+            <span class="role-org">Aspect · Contact Center AI · Bangalore</span>
+            <ul>
+              <li>Designed cloud-based contact-center solutions with AI-powered conversational interfaces and CRM integrations for enterprise customers.</li>
+              <li>Built secure, scalable REST APIs for unified communications, analytics, and real-time reporting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role-row">
+          <div class="role-num">04</div>
+          <div class="role-body">
+            <div class="role-head"><div class="role-title">Principal Consultant</div><div class="role-meta">2012 — 2019</div></div>
+            <span class="role-org">Mercedes-Benz R&D India · Bangalore</span>
+            <ul>
+              <li>Technical portfolio lead for global digital-transformation programs across Germany and the US, managing cross-border delivery in a highly regulated automotive environment.</li>
+              <li>Delivered platforms for dealer diagnostics, technical support, spare-parts ordering, and training used by global dealer networks.</li>
+              <li>Implemented AI-driven analytics and automation that improved after-sales efficiency and reduced manual processes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role-row">
+          <div class="role-num">05</div>
+          <div class="role-body">
+            <div class="role-head"><div class="role-title">Team Lead · IT Analyst</div><div class="role-meta">2007 — 2012</div></div>
+            <span class="role-org">IBM India · SunGard (now FIS) · Bangalore</span>
+            <ul>
+              <li>At IBM, led an enterprise knowledge-management system on SOA and microservices principles, driving automation and cross-platform integration.</li>
+              <li>At SunGard, architected a Contract Management System that improved contractor onboarding efficiency by 35%.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK (FIELD BLOCK) -->
+  <section id="work" class="field">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono idx">04</span><h2>Selected platforms</h2></div>
+      <div class="work-grid reveal">
+        <div class="work-card">
+          <div class="mono work-tag">AI · Pricing</div>
+          <h3>Strategic Pricing Platform</h3>
+          <p>An in-house AI platform that predicts commodity pricing from historical patterns, cost margins, and market inputs — with human-in-the-loop decisioning so experts can layer in inflation and commercial adders.</p>
+          <div class="mono work-stat">~$2M annual revenue impact · 18 BUs</div>
+          <div class="work-stack"><span>Python · FastAPI</span><span>ReactJS</span><span>XGBoost</span><span>AWS</span></div>
+        </div>
+
+        <div class="work-card">
+          <div class="mono work-tag">B2B · Commerce</div>
+          <h3>SaltStore</h3>
+          <p>A strategic B2B e-commerce platform for digital sales of salt products across road-safety and industrial use cases, with an AI demand-planning module that improved forecast accuracy and cut inventory risk.</p>
+          <div class="mono work-stat">Channel ≈ 11% of total annual revenue</div>
+          <div class="work-stack"><span>Java · Spring Boot</span><span>React</span><span>Enterprise Integration</span></div>
+        </div>
+
+        <div class="work-card">
+          <div class="mono work-tag">Platform · Reuse</div>
+          <h3>Digital Experience Platform</h3>
+          <p>A reusable foundation giving Cargill businesses consistent digital experiences — e-commerce, asset and user management, and shared platform services — grown from a single pilot into a multi-BU enterprise platform.</p>
+          <div class="mono work-stat">Microservices · API-first · cloud-native</div>
+          <div class="work-stack"><span>Java</span><span>React</span><span>AWS</span><span>Kubernetes</span></div>
+        </div>
+
+        <div class="work-card">
+          <div class="mono work-tag">GenAI · Enablement</div>
+          <h3>Enterprise GenAI Tooling</h3>
+          <p>Generative-AI tools for knowledge retrieval and workflow automation, deployed across engineering and support teams to remove repetitive manual work at scale.</p>
+          <div class="mono work-stat">~40% reduction in manual effort</div>
+          <div class="work-stack"><span>OpenAI</span><span>LangChain</span><span>Pinecone</span><span>MLOps</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono idx">05</span><h2>Capabilities &amp; stack</h2></div>
+      <div class="skills-grid reveal">
+        <div class="skill-col">
+          <h4>Leadership</h4>
+          <ul>
+            <li>Engineering org scaling</li>
+            <li>Enterprise platform architecture</li>
+            <li>P&amp;L-adjacent budget ownership</li>
+            <li>Cross-functional stakeholder management</li>
+            <li>Agile / SAFe delivery</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <h4>AI / ML &amp; Data</h4>
+          <ul>
+            <li>Generative AI in production</li>
+            <li>Predictive analytics &amp; MLOps</li>
+            <li>OpenAI · LangChain · Pinecone</li>
+            <li>XGBoost · Power BI</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <h4>Cloud &amp; Engineering</h4>
+          <ul>
+            <li>AWS · Azure</li>
+            <li>Docker · Kubernetes · GitHub Actions</li>
+            <li>Python <span>(FastAPI)</span> · Java <span>(Spring Boot)</span></li>
+            <li>React · PostgreSQL</li>
+            <li>Microservices &amp; API-first design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + AWARDS -->
+  <section id="more">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono idx">06</span><h2>Education, awards &amp; credentials</h2></div>
+      <div class="two-col reveal">
+        <div>
+          <h4 class="mono" style="color:var(--brass-deep);letter-spacing:.12em;margin-bottom:18px">Education</h4>
+          <div class="stack-item">
+            <div class="t">Doctor of Business Administration — AI in Enterprise Systems</div>
+            <div class="s">Golden Gate University, San Francisco</div>
+            <span class="when">2024 — 2027 · In progress</span>
+          </div>
+          <div class="stack-item">
+            <div class="t">Executive MBA</div>
+            <div class="s">Indian Institute of Management (IIM) Calcutta</div>
+            <span class="when">2022 — 2023</span>
+          </div>
+          <div class="stack-item">
+            <div class="t">Bachelor of Engineering</div>
+            <div class="s">Manipal Institute of Technology, Karnataka</div>
+            <span class="when">2003 — 2007</span>
+          </div>
+
+          <h4 class="mono" style="color:var(--brass-deep);letter-spacing:.12em;margin:34px 0 18px">Certifications</h4>
+          <div class="chips">
+            <span>PMP</span><span>PMI-ACP</span><span>TOGAF</span><span>SAFe Agilist</span><span>Salesforce AI Associate</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="mono" style="color:var(--brass-deep);letter-spacing:.12em;margin-bottom:18px">Awards &amp; recognition</h4>
+          <div class="stack-item award">
+            <div class="t">Cargill Global Impact Award — AI Innovation</div>
+            <div class="s">Production deployment of the AI pricing platform across 18+ global business units.</div>
+          </div>
+          <div class="stack-item award">
+            <div class="t">Breakthrough Award Finalist — GenAI Enablement</div>
+            <div class="s">Enterprise-wide GenAI tooling that reduced operational effort by ~40%.</div>
+          </div>
+          <div class="stack-item award">
+            <div class="t">Leadership Excellence — Digital Platform Modernization</div>
+            <div class="s">Leading the evolution of a shared enterprise Digital Experience Platform.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="mono foot-eyebrow">07 · Get in touch</div>
+    <h2>Let's build<br>something durable.</h2>
+    <div class="foot-links">
+      <a href="mailto:rupanshu2129@gmail.com">✉ rupanshu2129@gmail.com</a>
+      <a href="tel:+919902586103">☎ +91 99025 86103</a>
+      <a href="https://linkedin.com/in/rupanshu-tandon" target="_blank" rel="noopener">↗ LinkedIn</a>
+    </div>
+    <div class="languages">
+      <span><b>English</b> Fluent</span>
+      <span><b>Hindi</b> Native</span>
+      <span><b>Punjabi</b> Native</span>
+      <span><b>German</b> Professional</span>
+    </div>
+    <div class="colophon">Rupanshu Tandon · Bangalore, India · © 2026</div>
+  </div>
+</footer>
+
+<script>
+  // nav scrolled state
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>20);
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // mobile menu
+  const toggle=document.getElementById('navtoggle');
+  const links=document.getElementById('navlinks');
+  toggle.addEventListener('click',()=>{
+    const open=links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open);
+  });
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    links.classList.remove('open');toggle.setAttribute('aria-expanded',false);
+  }));
+
+  // scroll reveal
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
